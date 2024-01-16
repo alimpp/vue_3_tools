@@ -2,7 +2,7 @@
   <div>
     <span>{{ label }}</span>
     <select v-model="selectValue" @change="seletItem">
-      <option v-for="item in dataSource" :key="item.id">
+      <option v-for="item in dataSource" :key="item.id" :value="item">
         {{ item.name }}
       </option>
     </select>
